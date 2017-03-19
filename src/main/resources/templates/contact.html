@@ -1,0 +1,77 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="index::headcontent"></head>
+<header th:include="index::header"></header>
+
+<div class="bg-content">
+    <!--============================== content =================================-->
+    <div id="content">
+        <div class="ic"></div>
+        <div class="container">
+            <div class="row">
+                <article class="span4">
+                    <h3>Contact info</h3>
+
+                    <div class="map">
+                        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.1380755531018!2d80.41602174995617!3d6.993014094923515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3a078f05f9fc3%3A0x1dad87963c0b3407!2sAdventure+Explorers!5e0!3m2!1sen!2slk!4v1488428809054" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+                    </div>
+                    <address class="address-1">
+                        <strong>Adventure Explorers<br/>
+                            Ginigathhena Road<br/>
+                            Kithulgala</strong>
+
+                        <div class="overflow">
+                            <span>Telephone:</span>+94 71 084 1341<br/>
+                            <span>E-mail:</span> <a href="#" class="mail-1">info@adventurexplorers.com</a><br/>
+                            <!--<span>Skype:</span> <a href="#" class="mail-1">@skypename</a>-->
+                        </div>
+                    </address>
+                </article>
+                <article class="span8">
+                    <h3>Contact us</h3>
+
+                    <div class="inner-1">
+                        <form id="contact-form">
+                            <div class="success"> Contact form submitted! <strong>We will be in touch soon.</strong></div>
+                            <fieldset>
+                                <div>
+                                    <label class="name">
+                                        <input type="text" value="Your name"/>
+                                        <br/>
+                                        <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="phone">
+                                        <input type="tel" value="Telephone"/>
+                                        <br/>
+                                        <span class="error">*This is not a valid phone number.</span> <span
+                                            class="empty">*This field is required.</span> </label>
+                                </div>
+                                <div>
+                                    <label class="email">
+                                        <input type="email" value="Email"/>
+                                        <br/>
+                                        <span class="error">*This is not a valid email address.</span> <span
+                                            class="empty">*This field is required.</span> </label>
+                                </div>
+                                <div>
+                                    <label class="message">
+                                        <textarea>Message</textarea>
+                                        <br/>
+                                        <span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span>
+                                    </label>
+                                </div>
+                                <div class="buttons-wrapper"><a class="btn btn-1" data-type="reset">Clear</a> <a
+                                        class="btn btn-1" data-type="submit">Send</a></div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer th:include="index::footer"></footer>
+</html>
